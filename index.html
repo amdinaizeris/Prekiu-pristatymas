@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>ND #12 - shipping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <form>
+        <p>Prekės kaina:
+            <input type="number" id="kaina">€
+        </p>
+
+        <p>Ar prekę atsiimsite Vilniuje?</p>
+        <p>
+        <input type="radio" id='taip' name="pristatymas" onclick="pristatyti()">
+        <label for="taip">Ne</label>
+        <input type="radio" id='ne' name="pristatymas" onclick="nePristatyti()">
+        <label for="ne">Taip</label>
+    </p>
+
+        <p id="city">Įveskite miestą:
+            <input type="text" id="miestas">
+        </p>
+        <div class="button"><button type="button" onclick="skaiciuoti()">Pirkti</button></div>
+        
+    </form>
+
+    <p id="checkout"></p>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
